@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form Popup</title>
+    <link rel="stylesheet" href="enquire.css">
+</head>
+<body>
+    <!-- Trigger Button -->
+    <button id="open-popup" class="open-popup-btn">Enquire Now</button>
+
+    <!-- Popup -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <h2>Enquire Now</h2>
+            <p>Call / WhatsApp : +919212172602</p>
+            <form id="enquiry-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <select required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="Course 1">Course 1</option>
+                    <option value="Course 2">Course 2</option>
+                    <option value="Course 3">Course 3</option>
+                </select>
+                <textarea placeholder="Message" rows="4"></textarea>
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="enquire.js"></script>
+</body>
+</html>

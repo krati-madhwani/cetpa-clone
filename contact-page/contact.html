@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Webpage</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <p>Call / WhatsApp : +919212172602 | <a href="mailto:query@cetpainfotech.com">query@cetpainfotech.com</a></p>
+            <span class="job-alert">Newly Launched | 100% Job Guarantee Program</span>
+        </div>
+        <div class="nav-bar">
+            <img src="logo.png" alt="Logo" class="logo">
+            <nav class="nav-menu">
+                <a href="#">Courses</a>
+                <a href="#">Services</a>
+                <a href="#">IT Development</a>
+                <a href="#">Recruitment</a>
+                <a href="#">Resources</a>
+                <a href="#">Placement</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="action-buttons">
+                <button id="enquire-btn">Enquire Now</button>
+                <button id="register-btn">Registration</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-content">
+         <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923310164!2d77.06889950183792!3d28.527207845259337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce41a72bca8ad%3A0x3df0d1c19dbbda1!2sD-58%2C%20Red%20FM%20Road%2C%20Sector%202%2C%20D%20Block%2C%20Sector%202%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <section class="form-contact">
+        <div class="contact-info">
+            <h2>HEAD OFFICE (NOIDA)</h2>
+            <p>CETPA would like to hear from you</p>
+            <div class="contact-details">
+                <p><strong>Landline:</strong> 0120-4535-353</p>
+                <p><strong>Email:</strong> query@cetpainfotech.com</p>
+                <p><strong>Helpline:</strong> 91-9212172602</p>
+                <p><strong>Skype ID:</strong> cetpainfotech</p>
+                <p><strong>Address:</strong> D-58, Sector-2, Near Red FM, Noida-201301, Uttar Pradesh</p>
+            </div>
+        </div>
+        
+        <aside class="message-form">
+            <h2>SEND A MESSAGE</h2>
+            <p>Please feel free to contact us, our customer service center is working for you 12/7</p>
+            <form id="message-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <select id="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="Course 1">Course 1</option>
+                    <option value="Course 2">Course 2</option>
+                </select>
+                <textarea id="message" placeholder="Message"></textarea>
+                <button type="submit">GET IT NOW</button>
+            </form>
+        </aside>
+    </section>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
