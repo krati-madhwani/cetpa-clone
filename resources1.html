@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETPA Verification</title>
+    <style>
+        *{
+  margin: 0px;
+}
+
+
+.top-logo{
+    height: 70px;
+    width: 160px;
+    margin-left: 205px;
+    margin-right: 200px;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    /* height: auto; */
+}
+
+.navbar{
+  margin-left: 0px;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 21px 0;
+    background-color: #185895;
+    width: 100%;
+    margin-left: 0;
+  }
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: AvenirNext, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 8px 0;
+    letter-spacing: 2px;
+  }
+
+  @media (max-width: 991px) {
+    .nav {
+        width: 60%;
+    }
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #dde2e6, #7c8a99);
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            height: 83vh;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 0;
+            box-shadow: 1px -1px 7px 6px rgba(1, 0, 0, 0.364);
+            text-align: center;
+            height: 7.6cm;
+            width: 18.1cm;
+            margin-top: 100px;
+        }
+        .logo2 {
+            width: 200px;
+            height: 96.25px;
+        }
+        .subtext {
+            font-size: 14px;
+            color: red;
+            font-style: italic;
+        }
+        input {
+            width: 140px;
+            height: 30px;
+            text-align: left;
+            font-size: 18px;
+            margin: 5px;
+        }
+        button {
+            background-color: #185895;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            opacity: .65;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="top-logo" src="./resources1-logo.png">
+     <nav>
+         <ul>
+             <li><a href="https://www.cetpainfotech.com/">HOME</a></li>
+             <li><a href="https://www.cetpainfotech.com/aboutus">ABOUT CETPA</a></li>
+             <li><a href="https://www.cetpainfotech.com/industrial-training">TRAINING</a></li>
+             <li><a href="#">OTHER</a></li>
+         </ul>
+     </nav> 
+     </div>
+    <div class="container">
+        <div class="box">
+            <div >
+                <img class="logo2" src="../registration/logo.png">
+            </div>
+
+            <p style="font-size: 24px; font-family: sans-serif; margin-bottom: 50px;">Please enter the 4-digit verification code :</p>
+            <input type="password" maxlength="1" class="otp-input" oninput="moveToNext(this, 1)" autofocus>
+            <input type="password" maxlength="1" class="otp-input" oninput="moveToNext(this, 2)">
+            <input type="password" maxlength="1" class="otp-input" oninput="moveToNext(this, 3)">
+            <input type="password" maxlength="1" class="otp-input" oninput="moveToNext(this, 4)">
+            <br>
+            <button>Verify</button>
+        </div>
+    </div>
+
+    <script>
+        function moveToNext(current, index) {
+            if (current.value.length === 1) {
+                let nextInput = document.getElementsByClassName('otp-input')[index];
+                if (nextInput) {
+                    nextInput.focus();
+                }
+            }
+        }
+    </script>
+</body>
+</html>
